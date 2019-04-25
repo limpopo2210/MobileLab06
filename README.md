@@ -53,7 +53,7 @@ export default class App extends Component<Props> {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 1, /// (7)
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
@@ -84,5 +84,6 @@ const styles = StyleSheet.create({
 4. Встановлення стану об'єкта - лише через виклик `setState` (для більших проектів бажано стан тримати окремо, див. https://www.slideshare.net/ChiewCarol/react-native-reduxes6-updated)
 5. render() по замовченню виконується кожен раз, коли змінюється стан, і повертає нове дерево компонентів. React порівнює його зі старим і робить лише необхідні зміни, щоб не перестворювати всі елементи заново
 6. JSX дозволяє поєднувати код на JavaScript і XML. При цьому XML перетворюється на виклики JavaScript (https://frontarm.com/james-k-nelson/jsx-live-cheatsheet/)
+7. Параметр flex дає змогу елемменту розтягуватись по вертикалі і горизонталі. Див. https://www.slideshare.net/kobkrit/react-native-lecture-4-basic-elements-and-ui-layout-by-using-flexbox 
 
 ![](img/im1.png)
