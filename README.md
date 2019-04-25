@@ -38,8 +38,8 @@ export default class App extends Component<Props> {
     })
   }
   render() { /// (5)
-    return (
-      <View style={styles.container}> /// (6)
+    return ( /// (6)
+      <View style={styles.container}>
         <TouchableOpacity style={styles.button} onPress={this.onPress} >
             <Text>Touch Here</Text>
         </TouchableOpacity>
